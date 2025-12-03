@@ -1,9 +1,10 @@
 <?php
+//Manjot Chamdal WD-201 
 // PHP Setup: Variables and Arrays
-$name = "Mason's Cafe"; // The name of the Store
-$currency = "₱";       // Currency symbol which is the peso sign
+$name = "Mason's Cafe"; // The  name of the store
+$currency = "₱";       // Currency symbol which is the peso sign 
 
-// Array: The Menu items and their prices
+// Array: The Menu items and their prices 
 $menu = [
     "Espresso" => 95.00,
     "Latte" => 120.00,
@@ -15,7 +16,7 @@ $menu = [
     "Chocolate Croissant" => 80.00
 ];
 
-// Variables
+// Variables: 
 $discount = "10.00"; // Discount amount
 $surcharge = 5.00;   // Surcharge amount
 ?>
@@ -27,7 +28,7 @@ $surcharge = 5.00;   // Surcharge amount
     <title><?= $name ?></title>
     
     <style>
-        /* CSS Styling */
+        /*this is CSS Styling */
         body { 
             font-family: Arial, sans-serif; 
             color: #f5f5dc;
@@ -42,7 +43,7 @@ $surcharge = 5.00;   // Surcharge amount
             background-repeat: no-repeat; 
         }
         .container { 
-            max-width: 600px; 
+            max-width: 800px; 
             margin: 0 auto; 
             background-color: rgba(68, 68, 68, 0.85); 
             padding: 20px; 
@@ -56,6 +57,11 @@ $surcharge = 5.00;   // Surcharge amount
             border-collapse: collapse; 
             margin-top: 20px; 
         }
+        th, td { 
+            border: 1px solid #7a5e4d;
+            padding: 10px; 
+            text-align: left; 
+        }
         th { 
             background-color: #5c4033; 
             color: #f5f5dc; 
@@ -63,11 +69,21 @@ $surcharge = 5.00;   // Surcharge amount
         hr {
             border-color: #7a5e4d;
         }
+        /* this is Navigation Styling */
+        .nav { margin-bottom: 20px; }
+        .nav a {
+            color: #e0b48c; 
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         
-        <h1><?= $name ?> Menu</h1>
-        <h2>Mabuhay! Your Daily Coffee</h2>
+        <div class="nav">
+            <a href="cafe.php">MENU</a>
+            <a href="stock.php">STOCKS</a>
+        </div>
