@@ -1,4 +1,5 @@
 <?php
+//Manjot Chamdal WD-201
 // The header include
 include 'header.php';
 ?>
@@ -23,21 +24,21 @@ for ($i = 1; $i <= 3; $i++) {
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($menu as $item => $price) { 
+        <?php foreach ($menu as $item => $price) {
             $displayPrice = $price; 
             $note = "";
 
-            // IF ELSE
+            // IF ELSE 
             if ($item == "Latte") {
                 // Applying discount
-                $displayPrice = $price - $discount; 
+                $displayPrice = $price - $discount;
                 $note = " (₱" . $discount . " off!)";
             } elseif ($item == "Decaf Coffee") {
-                // Applying surcharge
-                $displayPrice = $price + $surcharge; 
+                //  Applying surcharge
+                $displayPrice = $price + $surcharge;
                 $note = " (Surcharge: ₱" . $surcharge . ")";
             } else {
-                //  price which is not changed
+                // price which is not changed
                 $displayPrice = $price;
                 $note = "";
             }
